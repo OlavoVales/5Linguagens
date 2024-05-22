@@ -12,11 +12,12 @@ int main(){
     cin >> contador;
 
     if (contador > 5 || contador < 1) {
+        
         cout << "Favor digite uma dos numeros validos (1-5)";
 
     }else{
 
-        switch (contador) {
+        switch (contador){
 
             case 1:
                 cout << "Digite o valor do primeiro numero: ";
@@ -78,7 +79,7 @@ int main(){
             break;
 
             default:
-                cout << "A operação escolhida eh invalida. ";
+                cout << "A operacao escolhida eh invalida. ";
         }
     }
   return 0;
