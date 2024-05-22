@@ -6,7 +6,7 @@
 int main()
 {
 
-    int escolha = 0, fatorial = 0;
+    int escolha = 0, fatorial = 0, numeroBase = 0;
     float numero1 = 0.0, numero2 = 0.0, resultado = 0.0;
 
     printf("Bem vindo ao programa das operacoes matematicas, digite [1] para realizar a soma de dois numeros, [2] para realizar a subtracao de dois numeros,\n");
@@ -66,19 +66,19 @@ int main()
             break;
         case 5:
 
-            printf("digite o número desejado: ");
+            printf("digite o numero desejado: ");
             scanf("%f", &numero1);
 
-            float numeroBase = numero1;
+            numeroBase = numero1;
 
             for (fatorial = 1; numero1 > 1; numero1 = numero1 - 1){
                 fatorial = fatorial * numero1;
             }
 
-            printf("o resultado do fatorial do numero %f eh: %d", numeroBase, fatorial);
+            printf("o resultado do fatorial do numero %d eh: %d", numeroBase, fatorial);
             break;
         default:
-            printf("a operação escolhida nao eh válida. ");
+            printf("a operacao escolhida nao eh válida. ");
         }
     }
 
